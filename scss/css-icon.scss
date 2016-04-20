@@ -69,8 +69,8 @@ html {
 	border-style: solid;
 
 	&:before {
-		content: '';
 		@include posAbs(px2em(1px), px2em(2px));
+		content: '';
 		border-right: px2em(6px) solid transparent;
 		border-left: px2em(6px) solid transparent;
 		border-bottom: px2em(6px) solid;
@@ -78,8 +78,8 @@ html {
 	}
 
 	&:after {
-		content: '';
 		@include posAbs(px2em(7px), px2em(6px));
+		content: '';
 		border-width: 0 0 0 px2em(4px);
 		border-style: solid;
 		height: px2em(8px);
@@ -95,8 +95,8 @@ html {
 	transform: rotate(180deg);
 
 	&:before {
-		content: '';
 		@include posAbs(0, px2em(-8px));
+		content: '';
 		border-right: px2em(8px) solid transparent;
 		border-left: px2em(8px) solid transparent;
 		border-bottom: px2em(5.6px) solid;
@@ -105,12 +105,135 @@ html {
 	}
 
 	&:after {
-		content: '';
 		@include posAbs(0, px2em(-8px));
+		content: '';
 		border-right: px2em(8px) solid transparent;
 		border-left: px2em(8px) solid transparent;
 		border-bottom: px2em(5.6px) solid;
 		border-top: none;
 		transform: rotate(-70deg);
 	}
+}
+
+.icon-menu {
+	@include posAbs();
+	width: px2em(16px);
+	border-top: px2em(4px) solid;
+
+	&:before {
+		@include posAbs(px2em(2px), 0);
+		content: '';
+		width: px2em(16px);
+		border-top: px2em(4px) solid;
+	}
+
+	&:after {
+		@include posAbs(px2em(8px), 0);
+		content: '';
+		width: px2em(16px);
+		border-top: px2em(4px) solid;
+	}
+}
+
+.icon-download {
+	@include posAbs(0, px2em(2px));
+	border-top: none;
+	border-right: px2em(6px) solid transparent;
+	border-left: px2em(6px) solid transparent;
+	border-bottom: px2em(5px) solid;
+
+	&:before {
+		@include posAbs(px2em(5px), px2em(-2px));
+		content: '';
+		border-left: 4px solid;
+		height: px2em(7px);
+	}
+
+	&:after {
+		@include posAbs(px2em(12px), px2em(-8px));
+		content: '';
+		border-top: none;
+		border-left: px2em(2px) solid;
+		border-right: px2em(2px) solid;
+		border-bottom: px2em(2px) solid;
+		height: px2em(4px);
+		width: px2em(16px);
+	}
+}
+
+.icon-upload {
+	@include posAbs(0, px2em(6px));
+	border-left: px2em(4px) solid;
+	height: px2em(7px);
+
+	&:before {
+		@include posAbs(px2em(7px), px2em(-8px));
+		content: '';
+		border-top: px2em(5px) solid;
+		border-right: px2em(6px) solid transparent;
+		border-left: px2em(6px) solid transparent;
+		border-bottom: none;
+	}
+
+	&:after {
+		@include posAbs(px2em(12px), px2em(-10px));
+		content: '';
+		border-top: none;
+		border-left: px2em(2px) solid;
+		border-right: px2em(2px) solid;
+		border-bottom: px2em(2px) solid;
+		height: px2em(4px);
+		width: px2em(16px);
+	}
+}
+
+.icon-like {
+	@include posAbs(0, px2em(1px));
+	height: px2em(15px);
+	width: px2em(10px);
+	border-radius: px2em(5px) px2em(5px) 0 0;
+	border-top: px2em(5px) solid;
+	border-left: px2em(5px) solid;
+	border-right: px2em(5px) solid;
+	border-bottom: none;
+	transform: rotate(-45deg);
+
+	&:after {
+		@include posAbs(px2em(-2px), px2em(-2px));
+		content: '';
+		height: px2em(15px);
+		width: px2em(10px);
+		border-radius: px2em(5px) px2em(5px) 0 0;
+		border-top: px2em(5px) solid;
+		border-left: px2em(5px) solid;
+		border-right: px2em(5px) solid;
+		border-bottom: none;
+		transform: rotate(90deg);
+	}
+}
+
+.icon-tag {
+	@include posAbs(0, px2em(3px));
+	height: px2em(16px);
+	border-left: px2em(5px) solid;
+	border-bottom: px2em(4px) solid transparent;
+	border-radius: px2em(2px) 0 0 0;
+
+	&:after {
+		@include posAbs();
+		content: '';
+		height: px2em(16px);
+		border-right: px2em(5px) solid;
+		border-bottom: px2em(4px) solid transparent;
+		border-radius: 0 px2em(2px) 0 0;
+	}
+}
+
+.icon-ok {
+	@include posAbs(px2em(1px), 0);
+	border-left: px2em(4px) solid;
+	border-bottom: px2em(4px) solid;
+	width: 16px;
+	height: 10px;
+	transform: rotate(-45deg);
 }

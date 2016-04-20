@@ -77,20 +77,20 @@ html {
   border-style: solid;
 }
 .icon-totop:before {
-  content: '';
   position: absolute;
   top: 0.0625em;
   left: 0.125em;
+  content: '';
   border-right: 0.375em solid transparent;
   border-left: 0.375em solid transparent;
   border-bottom: 0.375em solid;
   border-top: none;
 }
 .icon-totop:after {
-  content: '';
   position: absolute;
   top: 0.4375em;
   left: 0.375em;
+  content: '';
   border-width: 0 0 0 0.25em;
   border-style: solid;
   height: 0.5em;
@@ -108,10 +108,10 @@ html {
           transform: rotate(180deg);
 }
 .icon-star:before {
-  content: '';
   position: absolute;
   top: 0;
   left: -0.5em;
+  content: '';
   border-right: 0.5em solid transparent;
   border-left: 0.5em solid transparent;
   border-bottom: 0.35em solid;
@@ -120,14 +120,160 @@ html {
           transform: rotate(70deg);
 }
 .icon-star:after {
-  content: '';
   position: absolute;
   top: 0;
   left: -0.5em;
+  content: '';
   border-right: 0.5em solid transparent;
   border-left: 0.5em solid transparent;
   border-bottom: 0.35em solid;
   border-top: none;
   -webkit-transform: rotate(-70deg);
           transform: rotate(-70deg);
+}
+
+.icon-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  border-top: 0.25em solid;
+}
+.icon-menu:before {
+  position: absolute;
+  top: 0.125em;
+  left: 0;
+  content: '';
+  width: 1em;
+  border-top: 0.25em solid;
+}
+.icon-menu:after {
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  content: '';
+  width: 1em;
+  border-top: 0.25em solid;
+}
+
+.icon-download {
+  position: absolute;
+  top: 0;
+  left: 0.125em;
+  border-top: none;
+  border-right: 0.375em solid transparent;
+  border-left: 0.375em solid transparent;
+  border-bottom: 0.3125em solid;
+}
+.icon-download:before {
+  position: absolute;
+  top: 0.3125em;
+  left: -0.125em;
+  content: '';
+  border-left: 4px solid;
+  height: 0.4375em;
+}
+.icon-download:after {
+  position: absolute;
+  top: 0.75em;
+  left: -0.5em;
+  content: '';
+  border-top: none;
+  border-left: 0.125em solid;
+  border-right: 0.125em solid;
+  border-bottom: 0.125em solid;
+  height: 0.25em;
+  width: 1em;
+}
+
+.icon-upload {
+  position: absolute;
+  top: 0;
+  left: 0.375em;
+  border-left: 0.25em solid;
+  height: 0.4375em;
+}
+.icon-upload:before {
+  position: absolute;
+  top: 0.4375em;
+  left: -0.5em;
+  content: '';
+  border-top: 0.3125em solid;
+  border-right: 0.375em solid transparent;
+  border-left: 0.375em solid transparent;
+  border-bottom: none;
+}
+.icon-upload:after {
+  position: absolute;
+  top: 0.75em;
+  left: -0.625em;
+  content: '';
+  border-top: none;
+  border-left: 0.125em solid;
+  border-right: 0.125em solid;
+  border-bottom: 0.125em solid;
+  height: 0.25em;
+  width: 1em;
+}
+
+.icon-like {
+  position: absolute;
+  top: 0;
+  left: 0.0625em;
+  height: 0.9375em;
+  width: 0.625em;
+  border-radius: 0.3125em 0.3125em 0 0;
+  border-top: 0.3125em solid;
+  border-left: 0.3125em solid;
+  border-right: 0.3125em solid;
+  border-bottom: none;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icon-like:after {
+  position: absolute;
+  top: -0.125em;
+  left: -0.125em;
+  content: '';
+  height: 0.9375em;
+  width: 0.625em;
+  border-radius: 0.3125em 0.3125em 0 0;
+  border-top: 0.3125em solid;
+  border-left: 0.3125em solid;
+  border-right: 0.3125em solid;
+  border-bottom: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.icon-tag {
+  position: absolute;
+  top: 0;
+  left: 0.1875em;
+  height: 1em;
+  border-left: 0.3125em solid;
+  border-bottom: 0.25em solid transparent;
+  border-radius: 0.125em 0 0 0;
+}
+.icon-tag:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  height: 1em;
+  border-right: 0.3125em solid;
+  border-bottom: 0.25em solid transparent;
+  border-radius: 0 0.125em 0 0;
+}
+
+.icon-ok {
+  position: absolute;
+  top: 0.0625em;
+  left: 0;
+  border-left: 0.25em solid;
+  border-bottom: 0.25em solid;
+  width: 16px;
+  height: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
