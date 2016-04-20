@@ -1,0 +1,133 @@
+/**
+ * @ Name: css-icon
+ * @ URL: https://github.com/Fuxy526/css-icon
+ * @ Version: 0.0.1
+ * @ Author: Fuxy526
+ * @ Author URL: https://github.com/Fuxy526
+ * @ License: Licensed under MIT
+ */
+/**
+ * MIXINS
+ */
+/* position-absolute with top and left setting */
+/**
+ * FUNCTIONS
+ */
+/* transform px to em */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon {
+  position: relative;
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  color: #666;
+}
+
+.icon-btn {
+  height: 1.75em;
+  width: 1.75em;
+  box-shadow: 0 0 0 0.0625em #ccc;
+  border: 0.375em solid #eee;
+  background-color: #eee;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  border: 0.375em solid #ddd;
+  background-color: #ddd;
+  color: #444;
+}
+
+.icon-round {
+  border-radius: 0.125em;
+}
+
+.icon-plus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.625em;
+  height: 0.625em;
+  border-width: 0 0.25em 0.25em 0;
+  border-style: solid;
+}
+.icon-plus:after {
+  position: absolute;
+  top: 0.375em;
+  left: 0.375em;
+  content: '';
+  width: 0.625em;
+  height: 0.625em;
+  border-width: 0.25em 0 0 0.25em;
+  border-style: solid;
+}
+
+.icon-totop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  border-width: 0.125em 0 0 0;
+  border-style: solid;
+}
+.icon-totop:before {
+  content: '';
+  position: absolute;
+  top: 0.0625em;
+  left: 0.125em;
+  border-right: 0.375em solid transparent;
+  border-left: 0.375em solid transparent;
+  border-bottom: 0.375em solid;
+  border-top: none;
+}
+.icon-totop:after {
+  content: '';
+  position: absolute;
+  top: 0.4375em;
+  left: 0.375em;
+  border-width: 0 0 0 0.25em;
+  border-style: solid;
+  height: 0.5em;
+}
+
+.icon-star {
+  position: absolute;
+  top: 0.375em;
+  left: 0;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  border-bottom: 0.35em solid;
+  border-top: none;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.icon-star:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  border-bottom: 0.35em solid;
+  border-top: none;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+.icon-star:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  border-bottom: 0.35em solid;
+  border-top: none;
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}

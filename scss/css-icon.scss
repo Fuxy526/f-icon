@@ -1,0 +1,116 @@
+/**
+ * @ Name: css-icon
+ * @ URL: https://github.com/Fuxy526/css-icon
+ * @ Version: 0.0.1
+ * @ Author: Fuxy526
+ * @ Author URL: https://github.com/Fuxy526
+ * @ License: Licensed under MIT
+ */
+
+@import 'mixins';
+@import 'functions';
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.icon {
+	position: relative;
+	height: px2em(16px);
+	width: px2em(16px);
+	display: inline-block;
+	color: #666;
+}
+
+.icon-btn {
+	height: px2em(28px);
+	width: px2em(28px);
+	box-shadow: 0 0 0 px2em(1px) #ccc;
+	border: px2em(6px) solid #eee;
+	background-color: #eee;
+	cursor: pointer;
+
+	&:hover{
+		border: px2em(6px) solid #ddd;
+		background-color: #ddd;
+		color: #444;
+	}
+}
+
+.icon-round {
+	border-radius: px2em(2px);
+}
+
+.icon-plus {
+	@include posAbs();
+	width: px2em(10px);
+	height: px2em(10px);
+	border-width: 0 px2em(4px) px2em(4px) 0;
+	border-style: solid;
+
+	&:after {
+		@include posAbs(px2em(6px), px2em(6px));
+		content: '';
+		width: px2em(10px);
+		height: px2em(10px);
+		border-width: px2em(4px) 0 0 px2em(4px);
+		border-style: solid;
+	}
+}
+
+.icon-totop {
+	@include posAbs();
+	width: px2em(16px);
+	border-width: px2em(2px) 0 0 0;
+	border-style: solid;
+
+	&:before {
+		content: '';
+		@include posAbs(px2em(1px), px2em(2px));
+		border-right: px2em(6px) solid transparent;
+		border-left: px2em(6px) solid transparent;
+		border-bottom: px2em(6px) solid;
+		border-top: none;
+	}
+
+	&:after {
+		content: '';
+		@include posAbs(px2em(7px), px2em(6px));
+		border-width: 0 0 0 px2em(4px);
+		border-style: solid;
+		height: px2em(8px);
+	}
+}
+
+.icon-star {
+	@include posAbs(px2em(6px), 0);
+	border-right: px2em(8px) solid transparent;
+	border-left: px2em(8px) solid transparent;
+	border-bottom: px2em(5.6px) solid;
+	border-top: none;
+	transform: rotate(180deg);
+
+	&:before {
+		content: '';
+		@include posAbs(0, px2em(-8px));
+		border-right: px2em(8px) solid transparent;
+		border-left: px2em(8px) solid transparent;
+		border-bottom: px2em(5.6px) solid;
+		border-top: none;
+		transform: rotate(70deg);
+	}
+
+	&:after {
+		content: '';
+		@include posAbs(0, px2em(-8px));
+		border-right: px2em(8px) solid transparent;
+		border-left: px2em(8px) solid transparent;
+		border-bottom: px2em(5.6px) solid;
+		border-top: none;
+		transform: rotate(-70deg);
+	}
+}

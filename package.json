@@ -1,0 +1,19 @@
+{
+  "name": "css-icon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "css-icon.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fuxy526",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "colors": "^1.1.2"
+  }
+}
