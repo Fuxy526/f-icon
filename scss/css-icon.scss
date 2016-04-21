@@ -345,3 +345,99 @@ html {
 		transform: rotate(45deg);
 	}
 }
+
+/* only compatible in chrome */
+/*.icon-setting {
+	@include posAbs(px2em(2px), px2em(2px));
+	height: px2em(12px);
+	width: px2em(12px);
+	border: px2em(3px) solid;
+	border-radius: 50%;
+
+ &:after {
+ 	@include posAbs(px2em(-5px), px2em(-5px));
+ 	content: '';
+ 	height: px2em(16px);
+ 	width: px2em(16px);
+ 	border: px2em(3px) dotted;
+ 	border-radius: 50%;
+ }
+}*/
+
+.icon-user {
+	@include posAbs(0, px2em(4px));
+	width: px2em(10px);
+	height: px2em(10px);
+	border: px2em(5px) solid;
+	border-radius: 50%;
+
+	&:after {
+		@include posAbs(px2em(5px), px2em(-8px));
+		content: '';
+		width: px2em(16px);
+		border-top: px2em(6px) solid;
+		border-radius: px2em(4px) px2em(4px) 0 0;
+	}
+}
+
+.icon-comment {
+	@include posAbs();
+	width: px2em(16px);
+	height: px2em(10px);
+	border-top: px2em(5px) solid;
+	border-bottom: px2em(5px) solid;
+	border-left: px2em(8px) solid;
+	border-right: px2em(8px) solid;
+	border-radius: px2em(4px);
+
+	&:after {
+		@include posAbs(px2em(5px), px2em(-4px));
+		content: '';
+		border-top: px2em(6px) solid;
+		border-left: none;
+		border-right: px2em(5px) solid transparent;
+		border-bottom: none;
+	}
+}
+
+.icon-loading {
+	@include posAbs(px2em(5.6px), px2em(5.6px));
+	opacity: .8;
+	width: px2em(4px);
+	height: px2em(4px);
+	border-radius: 50%;
+	box-shadow: px2em(6px) 0 0 0 rgba(0,0,0,1), px2em(4.24px) px2em(-4.24px) 0 0 rgba(0,0,0,.75), 0 px2em(-6px) 0 0 rgba(0,0,0,.5), px2em(-4.24px) px2em(-4.24px) 0 0 rgba(0,0,0,.25);
+	animation: 1s icon-loading-rotate infinite linear;
+}
+
+@keyframes icon-loading-rotate {
+	0% {transform: rotate(0deg);};
+	100% {transform: rotate(360deg);};
+}
+
+.icon-home {
+	@include posAbs();
+	width: px2em(16px);
+	border-bottom: px2em(7px) solid;
+	border-left: px2em(8px) solid transparent;
+	border-right: px2em(8px) solid transparent;
+	border-top: none;
+
+	&:before {
+		@include posAbs(px2em(7px), px2em(-6px));
+		content: '';
+		border-top: px2em(3px) solid;
+		border-left: px2em(5px) solid;
+		width: px2em(6px);
+		height: px2em(9px);
+	}
+
+	&:after {
+		@include posAbs(px2em(7px), 0);
+		content: '';
+		border-top: px2em(3px) solid;
+		border-right: px2em(5px) solid;
+		width: px2em(6px);
+		height: px2em(9px);
+	}
+}
