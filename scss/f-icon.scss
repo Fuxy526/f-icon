@@ -119,8 +119,8 @@
 	&:after {
 		border-bottom: em(2px) solid;
 		border-right: em(2px) solid;
-		width: em(8px);
-		height: em(8px);
+		width: em(10px);
+		height: em(10px);
 		top: 0;
 		left: em(3px);
 		transform: rotate(45deg);
@@ -134,8 +134,8 @@
 	&:after {
 		border-top: em(2px) solid;
 		border-left: em(2px) solid;
-		width: em(8px);
-		height: em(8px);
+		width: em(10px);
+		height: em(10px);
 		top: em(5px);
 		left: em(3px);
 		transform: rotate(45deg);
@@ -149,8 +149,8 @@
 	&:after {
 		border-top: em(2px) solid;
 		border-left: em(2px) solid;
-		width: em(8px);
-		height: em(8px);
+		width: em(10px);
+		height: em(10px);
 		top: em(2px);
 		left: em(6px);
 		transform: rotate(-45deg);
@@ -164,8 +164,8 @@
 	&:after {
 		border-top: em(2px) solid;
 		border-right: em(2px) solid;
-		width: em(8px);
-		height: em(8px);
+		width: em(10px);
+		height: em(10px);
 		top: em(2px);
 		left: em(1px);
 		transform: rotate(45deg);
@@ -367,5 +367,73 @@
 		border-right: em(6px) solid transparent;
 		top: em(10px);
 		left: 0;
+	}
+}
+
+.icon-user {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+
+	&:before {
+		border: em(2px) solid;
+		border-radius: 50%;
+		width: em(10px);
+		height: em(10px);
+		top: 0;
+		left: em(3px);
+	}
+
+	&:after {
+		border: em(2px) solid;
+		width: em(16px);
+		height: em(6px);
+		top: em(10px);
+		left: 0;
+		border-radius: em(6px) em(6px) 0 0;
+	}
+}
+
+.icon-lock {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+
+	&:before {
+		width: em(10px);
+		height: em(7px);
+		border: em(2px) solid;
+		border-radius: em(4px) em(4px) 0 0;
+		top: 0;
+		left: em(3px);
+	}
+
+	&:after {
+		width: em(16px);
+		height: em(11px);
+		border: em(2px) solid;
+		border-radius: em(2px);
+		top: em(5px);
+		left: 0;
+	}
+}
+
+.icon-search {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+	transform: rotate(-45deg);
+
+	&:before {
+		width: em(12px);
+		height: em(12px);
+		top: 0;
+		left: em(2px);
+		border: em(2px) solid;
+		border-radius: 50%;
+	}
+
+	&:after {
+		border: em(2px) solid;
+		height: em(6px);
+		top: em(12px);
+		left: em(6px);
 	}
 }

@@ -6,22 +6,24 @@
  * @ Author URL: https://github.com/Fuxy526
  * @ License: Licensed under MIT
  */
-.icon-common-use, .icon-plus, .icon-cancel, .icon-minus, .icon-ok, .icon-power, .icon-menu, .icon-caret-down, .icon-caret-up, .icon-caret-left, .icon-caret-right, .icon-play, .icon-pause, .icon-stop, .icon-rewind, .icon-forward, .icon-previous, .icon-next, .icon-arrow-left, .icon-arrow-right, .icon-arrow-top, .icon-arrow-bottom {
+.icon-common-use, .icon-plus, .icon-cancel, .icon-minus, .icon-ok, .icon-power, .icon-menu, .icon-caret-down, .icon-caret-up, .icon-caret-left, .icon-caret-right, .icon-play, .icon-pause, .icon-stop, .icon-rewind, .icon-forward, .icon-previous, .icon-next, .icon-arrow-left, .icon-arrow-right, .icon-arrow-top, .icon-arrow-bottom, .icon-user, .icon-lock, .icon-search {
   box-sizing: border-box;
   display: inline-block;
   position: relative;
   vertical-align: middle;
 }
-.icon-common-use:before, .icon-plus:before, .icon-cancel:before, .icon-minus:before, .icon-ok:before, .icon-power:before, .icon-menu:before, .icon-caret-down:before, .icon-caret-up:before, .icon-caret-left:before, .icon-caret-right:before, .icon-play:before, .icon-pause:before, .icon-stop:before, .icon-rewind:before, .icon-forward:before, .icon-previous:before, .icon-next:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-arrow-top:before, .icon-arrow-bottom:before {
+.icon-common-use:before, .icon-plus:before, .icon-cancel:before, .icon-minus:before, .icon-ok:before, .icon-power:before, .icon-menu:before, .icon-caret-down:before, .icon-caret-up:before, .icon-caret-left:before, .icon-caret-right:before, .icon-play:before, .icon-pause:before, .icon-stop:before, .icon-rewind:before, .icon-forward:before, .icon-previous:before, .icon-next:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-arrow-top:before, .icon-arrow-bottom:before, .icon-user:before, .icon-lock:before, .icon-search:before {
+  box-sizing: border-box;
   content: '';
   position: absolute;
 }
-.icon-common-use:after, .icon-plus:after, .icon-cancel:after, .icon-minus:after, .icon-ok:after, .icon-power:after, .icon-menu:after, .icon-caret-down:after, .icon-caret-up:after, .icon-caret-left:after, .icon-caret-right:after, .icon-play:after, .icon-pause:after, .icon-stop:after, .icon-rewind:after, .icon-forward:after, .icon-previous:after, .icon-next:after, .icon-arrow-left:after, .icon-arrow-right:after, .icon-arrow-top:after, .icon-arrow-bottom:after {
+.icon-common-use:after, .icon-plus:after, .icon-cancel:after, .icon-minus:after, .icon-ok:after, .icon-power:after, .icon-menu:after, .icon-caret-down:after, .icon-caret-up:after, .icon-caret-left:after, .icon-caret-right:after, .icon-play:after, .icon-pause:after, .icon-stop:after, .icon-rewind:after, .icon-forward:after, .icon-previous:after, .icon-next:after, .icon-arrow-left:after, .icon-arrow-right:after, .icon-arrow-top:after, .icon-arrow-bottom:after, .icon-user:after, .icon-lock:after, .icon-search:after {
+  box-sizing: border-box;
   content: '';
   position: absolute;
 }
 
-.icon-wh-16, .icon-plus, .icon-cancel, .icon-minus, .icon-ok, .icon-power, .icon-caret-down, .icon-caret-up, .icon-caret-left, .icon-caret-right {
+.icon-wh-16, .icon-plus, .icon-cancel, .icon-minus, .icon-ok, .icon-power, .icon-caret-down, .icon-caret-up, .icon-caret-left, .icon-caret-right, .icon-user, .icon-lock, .icon-search {
   width: 1em;
   height: 1em;
 }
@@ -112,8 +114,8 @@
 .icon-caret-down:after {
   border-bottom: 0.125em solid;
   border-right: 0.125em solid;
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.625em;
+  height: 0.625em;
   top: 0;
   left: 0.1875em;
   -webkit-transform: rotate(45deg);
@@ -123,8 +125,8 @@
 .icon-caret-up:after {
   border-top: 0.125em solid;
   border-left: 0.125em solid;
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.625em;
+  height: 0.625em;
   top: 0.3125em;
   left: 0.1875em;
   -webkit-transform: rotate(45deg);
@@ -134,8 +136,8 @@
 .icon-caret-left:after {
   border-top: 0.125em solid;
   border-left: 0.125em solid;
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.625em;
+  height: 0.625em;
   top: 0.125em;
   left: 0.375em;
   -webkit-transform: rotate(-45deg);
@@ -145,8 +147,8 @@
 .icon-caret-right:after {
   border-top: 0.125em solid;
   border-right: 0.125em solid;
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.625em;
+  height: 0.625em;
   top: 0.125em;
   left: 0.0625em;
   -webkit-transform: rotate(45deg);
@@ -321,4 +323,57 @@
   border-right: 0.375em solid transparent;
   top: 0.625em;
   left: 0;
+}
+
+.icon-user:before {
+  border: 0.125em solid;
+  border-radius: 50%;
+  width: 0.625em;
+  height: 0.625em;
+  top: 0;
+  left: 0.1875em;
+}
+.icon-user:after {
+  border: 0.125em solid;
+  width: 1em;
+  height: 0.375em;
+  top: 0.625em;
+  left: 0;
+  border-radius: 0.375em 0.375em 0 0;
+}
+
+.icon-lock:before {
+  width: 0.625em;
+  height: 0.4375em;
+  border: 0.125em solid;
+  border-radius: 0.25em 0.25em 0 0;
+  top: 0;
+  left: 0.1875em;
+}
+.icon-lock:after {
+  width: 1em;
+  height: 0.6875em;
+  border: 0.125em solid;
+  border-radius: 0.125em;
+  top: 0.3125em;
+  left: 0;
+}
+
+.icon-search {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icon-search:before {
+  width: 0.75em;
+  height: 0.75em;
+  top: 0;
+  left: 0.125em;
+  border: 0.125em solid;
+  border-radius: 50%;
+}
+.icon-search:after {
+  border: 0.125em solid;
+  height: 0.375em;
+  top: 0.75em;
+  left: 0.375em;
 }

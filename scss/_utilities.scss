@@ -6,11 +6,13 @@
 	vertical-align: middle;
 
 	&:before {
+		box-sizing: border-box;
 		content: '';
 		position: absolute;
 	}
 
 	&:after {
+		box-sizing: border-box;
 		content: '';
 		position: absolute;
 	}
