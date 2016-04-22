@@ -24,6 +24,92 @@
 	<div class="icon-btn">
 		<i class="icon-menu"></i>
 	</div>
+	<div class="icon-btn">
+		<i class="icon-caret-down"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-caret-up"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-caret-left"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-caret-right"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-play"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-pause"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-stop"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-rewind"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-forward"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-previous"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-next"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-arrow-left"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-arrow-right"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-arrow-top"></i>
+	</div>
+	<div class="icon-btn">
+		<i class="icon-arrow-bottom"></i>
+	</div>
+
+	<hr>
+	<div class="icon-btn test">
+		<i class="icon-caret-down"></i>
+	</div>
+	<div class="icon-btn test2">
+		<i class="icon-caret-left"></i>
+	</div>
+	<div class="icon-btn test3">
+		<i class="icon-play"></i>
+	</div>
 	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('.test').click(function() {
+			if ($(this).find("i").hasClass("icon-caret-down")) {
+				$(this).find("i").removeClass("icon-caret-down").addClass("icon-caret-up");
+			}
+			else {
+				$(this).find("i").removeClass("icon-caret-up").addClass("icon-caret-down");
+			}
+		});
+		$('.test2').click(function() {
+			if ($(this).find("i").hasClass("icon-caret-left")) {
+				$(this).find("i").removeClass("icon-caret-left").addClass("icon-caret-right");
+			}
+			else {
+				$(this).find("i").removeClass("icon-caret-right").addClass("icon-caret-left");
+			}
+		});
+		$('.test3').click(function() {
+			if ($(this).find("i").hasClass("icon-play")) {
+				$(this).find("i").removeClass("icon-play").addClass("icon-pause");
+			}
+			else if ($(this).find("i").hasClass("icon-pause")) {
+				$(this).find("i").removeClass("icon-pause").addClass("icon-stop");
+			}
+			else {
+				$(this).find("i").removeClass("icon-stop").addClass("icon-play");
+			}
+		});
+	</script>
 </body>
 </html>
