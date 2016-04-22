@@ -1,9 +1,5 @@
-/**
- * FUNCTIONS
- */
 
-/* transform px to em */
-@function px2em($px) {
+@function em($px) {
 	$em: 16px;
 	@return $px/$em * 1em;
 }

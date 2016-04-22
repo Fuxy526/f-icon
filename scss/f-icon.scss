@@ -1,0 +1,110 @@
+/**
+ * @ Name: f-icon
+ * @ URL: https://github.com/Fuxy526/f-icon
+ * @ Version: 0.0.1
+ * @ Author: Fuxy526
+ * @ Author URL: https://github.com/Fuxy526
+ * @ License: Licensed under MIT
+ */
+
+@import 'variables';
+@import 'functions';
+@import 'utilities';
+
+.icon-btn {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #f2f2f2;
+	border: 1px solid #eeeeee;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #eeeeee;
+		border: 1px solid #dddddd;
+	}
+}
+
+.icon-plus {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+
+	&:before {
+		top: em(7px);
+		left: 0;
+		width: em(16px);
+		border-top: em(2px) solid;
+	}
+
+	&:after {
+		top: 0;
+		left: em(7px);
+		height: em(16px);
+		border-left: em(2px) solid;
+	}
+}
+
+.icon-minus {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+
+	&:after {
+		border-top: em(2px) solid;
+		width: em(16px);
+		top: em(7px);
+		left: 0;
+	}
+}
+
+.icon-cancel {
+	@extend .icon-plus;
+	transform: rotate(45deg);
+}
+
+.icon-ok {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+	transform: rotate(-45deg);
+
+	&:after {
+		border-left: em(2px) solid;
+		border-bottom: em(2px) solid;
+		width: em(16px);
+		height: em(8px);
+		top: 0;
+		left: 0;
+	}
+}
+
+.icon-power {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+	border: 2px solid;
+	border-top-color: transparent;
+	border-radius: 50%;
+
+	&:after {
+		height: em(8px);
+		border-left: em(2px) solid;
+		left: em(5px);
+		top: em(-2px);
+	}
+}
+
+.icon-menu {
+	@extend .icon-common-use;
+	width: em(16px);
+	height: em(10px);
+	border-top: em(2px) solid;
+	border-bottom: em(2px) solid;
+
+	&:after {
+		width: em(16px);
+		border-top: em(2px) solid;
+		top: em(2px);
+		left: 0;
+	}
+}

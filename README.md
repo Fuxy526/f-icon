@@ -1,3 +1,3 @@
-##CSS-ICON
+##f-icon
 
-Icons created by pure css.
+Icons created by pure css with one element.

@@ -1,0 +1,107 @@
+/**
+ * @ Name: f-icon
+ * @ URL: https://github.com/Fuxy526/f-icon
+ * @ Version: 0.0.1
+ * @ Author: Fuxy526
+ * @ Author URL: https://github.com/Fuxy526
+ * @ License: Licensed under MIT
+ */
+.icon-common-use, .icon-plus, .icon-cancel, .icon-minus, .icon-ok, .icon-power, .icon-menu {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  color: #666;
+}
+.icon-common-use:before, .icon-plus:before, .icon-cancel:before, .icon-minus:before, .icon-ok:before, .icon-power:before, .icon-menu:before {
+  content: '';
+  position: absolute;
+}
+.icon-common-use:after, .icon-plus:after, .icon-cancel:after, .icon-minus:after, .icon-ok:after, .icon-power:after, .icon-menu:after {
+  content: '';
+  position: absolute;
+}
+
+.icon-wh-16, .icon-plus, .icon-cancel, .icon-minus, .icon-ok, .icon-power {
+  width: 1em;
+  height: 1em;
+}
+
+.icon-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+}
+
+.icon-plus:before, .icon-cancel:before {
+  top: 0.4375em;
+  left: 0;
+  width: 1em;
+  border-top: 0.125em solid;
+}
+.icon-plus:after, .icon-cancel:after {
+  top: 0;
+  left: 0.4375em;
+  height: 1em;
+  border-left: 0.125em solid;
+}
+
+.icon-minus:after {
+  border-top: 0.125em solid;
+  width: 1em;
+  top: 0.4375em;
+  left: 0;
+}
+
+.icon-cancel {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.icon-ok {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icon-ok:after {
+  border-left: 0.125em solid;
+  border-bottom: 0.125em solid;
+  width: 1em;
+  height: 0.5em;
+  top: 0;
+  left: 0;
+}
+
+.icon-power {
+  border: 2px solid;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.icon-power:after {
+  height: 0.5em;
+  border-left: 0.125em solid;
+  left: 0.3125em;
+  top: -0.125em;
+}
+
+.icon-menu {
+  width: 1em;
+  height: 0.625em;
+  border-top: 0.125em solid;
+  border-bottom: 0.125em solid;
+}
+.icon-menu:after {
+  width: 1em;
+  border-top: 0.125em solid;
+  top: 0.125em;
+  left: 0;
+}
