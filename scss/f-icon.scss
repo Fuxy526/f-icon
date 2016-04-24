@@ -396,14 +396,19 @@
 .icon-lock {
 	@extend .icon-common-use;
 	@extend .icon-wh-16;
+	border-top: em(9px) solid transparent;
+	border-bottom: em(4px) solid transparent;
+	border-left: em(7px) solid transparent;
+	border-right: em(7px) solid transparent;
+	box-shadow: 0 0 0 em(1px) inset;
 
 	&:before {
 		width: em(10px);
 		height: em(7px);
 		border: em(2px) solid;
 		border-radius: em(4px) em(4px) 0 0;
-		top: 0;
-		left: em(3px);
+		top: em(-9px);
+		left: em(-4px);
 	}
 
 	&:after {
@@ -411,8 +416,8 @@
 		height: em(11px);
 		border: em(2px) solid;
 		border-radius: em(2px);
-		top: em(5px);
-		left: 0;
+		top: em(-4px);
+		left: em(-7px);
 	}
 }
 
