@@ -519,3 +519,64 @@
 		top: 0;
 	}
 }
+
+.icon-clock {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+	border: em(2px) solid;
+	border-radius: 50%;
+
+	&:after {
+		border-left: em(2px) solid;
+		border-bottom: em(2px) solid;
+		width: em(5px);
+		height: em(6px);
+		top: em(1px);
+		left: em(5px);
+	}
+}
+
+.icon-pie-chart {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+	border: em(8px) solid;
+	border-right-color: transparent;
+	border-radius: 50%;
+	transform: rotate(-45deg);
+
+	&:after {
+		border-right: em(7px) solid;
+		border-top: em(7px) solid transparent;
+		border-bottom: em(7px) solid transparent;
+		border-left: em(7px) solid transparent;
+		border-radius: 50%;
+		top: em(-7px);
+		left: em(-5px);
+	}
+}
+
+.icon-line-chart {
+	@extend .icon-common-use;
+	width: em(16px);
+	height: em(14px);
+	border-left: em(2px) solid;
+	border-bottom: em(2px) solid;
+
+	&:before {
+		border-top: em(2px) solid;
+		border-left: em(2px) solid;
+		width: em(6px);
+		height: em(6px);
+		bottom: em(1px);
+		left: em(2px);
+		transform: skew(-30deg);
+	}
+
+	&:after {
+		border-left: em(2px) solid;
+		height: em(7px);
+		transform: rotate(35deg);
+		bottom: em(5px);
+		left: em(9px);
+	}
+}
