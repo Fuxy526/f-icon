@@ -442,3 +442,80 @@
 		left: em(6px);
 	}
 }
+
+.icon-refresh {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+	border: em(2px) solid;
+	border-left: em(2px) solid transparent;
+	border-right: em(2px) solid transparent;
+	border-radius: 50%;
+
+	&:before {
+		border-left: em(4px) solid;
+		border-top: em(4px) solid transparent;
+		border-bottom: em(4px) solid transparent;
+		transform: rotate(45deg);
+		top: em(-2px);
+		left: em(10px);
+	}
+
+	&:after {
+		border-right: em(4px) solid;
+		border-top: em(4px) solid transparent;
+		border-bottom: em(4px) solid transparent;
+		transform: rotate(45deg);
+		top: em(6px);
+		left: em(-2px);
+	}
+}
+
+.icon-undo {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+
+	&:before {
+		border-right: em(6px) solid;
+		border-top: em(6px) solid transparent;
+		border-bottom: em(6px) solid transparent;
+		left: em(1px);
+		top: 0;
+	}
+
+	&:after {
+		border-top: em(4px) solid;
+		border-left: em(4px) solid transparent;
+		border-right: em(2px) solid;
+		border-bottom: none;
+		border-radius: em(8px);
+		width: em(14px);
+		height: em(12px);
+		top: em(4px);
+		left: em(1px);
+	}
+}
+
+.icon-redo {
+	@extend .icon-common-use;
+	@extend .icon-wh-16;
+
+	&:before {
+		border-top: em(4px) solid;
+		border-right: em(4px) solid transparent;
+		border-left: em(2px) solid;
+		border-bottom: none;
+		border-radius: em(8px);
+		width: em(14px);
+		height: em(12px);
+		top: em(4px);
+		right: em(1px);
+	}
+
+	&:after {
+		border-left: em(6px) solid;
+		border-top: em(6px) solid transparent;
+		border-bottom: em(6px) solid transparent;
+		right: em(1px);
+		top: 0;
+	}
+}
