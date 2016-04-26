@@ -580,3 +580,28 @@
 		left: em(9px);
 	}
 }
+
+.icon-eyes {
+	@extend .icon-common-use;
+	width: em(16px);
+	height: em(16px);
+	border: em(5px) solid transparent;
+	border-radius: 50%;
+	box-shadow: 0 0 0 em(2px) inset;
+
+	&:before {
+		@extend .icon-wh-16;
+		border-top: em(2px) solid;
+		border-radius: 50%;
+		left: em(-5px);
+		top: em(-3px);
+	}
+
+	&:after {
+		@extend .icon-wh-16;
+		border-bottom: em(2px) solid;
+		border-radius: 50%;
+		left: em(-5px);
+		top: em(-7px);
+	}
+}
